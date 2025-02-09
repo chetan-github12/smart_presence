@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center">
+    <h2 class="text-2xl font-bold mb-6">Live Face Recognition</h2>
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-4">
+        <div class="relative aspect-w-16 aspect-h-9">
+            <img src="{{ url_for('video_feed') }}" class="w-full h-full object-cover rounded-lg">
+        </div>
+        
+        <div class="mt-4 grid grid-cols-2 gap-4">
+            <div class="bg-gray-50 rounded-lg p-4">
+                <h3 class="text-lg font-semibold mb-2">Instructions</h3>
+                <ul class="text-left text-sm space-y-2">
+                    <li>• Stand within 0.5 - 3 meters from camera</li>
+                    <li>• Ensure good lighting on face</li>
+                    <li>• Look directly at the camera</li>
+                    <li>• Remove masks or face coverings</li>
+                </ul>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+                <h3 class="text-lg font-semibold mb-2">Status</h3>
+                <ul class="text-left text-sm space-y-2">
+                    <li>• Camera: Active</li>
+                    <li>• Recognition: Running</li>
+                    <li>• Processing: Real-time</li>
+                    <li>• Recording: Enabled</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

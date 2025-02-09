@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartPresence AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">SmartPresence AI</h1>
+            <div class="space-x-6">
+                <a href="/" class="hover:text-gray-200">Home</a>
+                <a href="/register" class="hover:text-gray-200">Register</a>
+                <a href="/live" class="hover:text-gray-200">Live Detection</a>
+                <a href="/attendance" class="hover:text-gray-200">Attendance</a>
+                <a href="/reports" class="hover:text-gray-200">Reports</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto p-6">
+        {% block content %}{% endblock %}
+    </div>
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>SmartPresence AI - Real-Time Face Recognition Attendance System</p>
+            <p class="text-sm text-gray-400 mt-1">Version 1.0</p>
+        </div>
+    </footer>
+</body>
+</html>

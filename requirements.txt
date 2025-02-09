@@ -1,0 +1,6 @@
+flask
+opencv-contrib-python
+numpy
+pandas
+openpyxl
+werkzeug

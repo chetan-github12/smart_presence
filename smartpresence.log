@@ -1,0 +1,317 @@
+2025-02-09 14:58:03,219 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-02-09 14:58:03,219 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 14:58:03,236 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 14:58:04,231 - WARNING -  * Debugger is active!
+2025-02-09 14:58:04,234 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:08:05,190 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-02-09 15:08:05,190 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 15:08:05,205 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 15:08:06,502 - WARNING -  * Debugger is active!
+2025-02-09 15:08:06,504 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:14:13,349 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-02-09 15:14:13,349 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 15:14:13,363 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 15:14:14,268 - WARNING -  * Debugger is active!
+2025-02-09 15:14:14,271 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:14:18,515 - INFO - 127.0.0.1 - - [09/Feb/2025 15:14:18] "GET / HTTP/1.1" 200 -
+2025-02-09 15:14:18,800 - INFO - 127.0.0.1 - - [09/Feb/2025 15:14:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-09 15:15:27,802 - INFO - 127.0.0.1 - - [09/Feb/2025 15:15:27] "GET / HTTP/1.1" 200 -
+2025-02-09 15:15:51,683 - ERROR - Error fetching attendance: no such column: distance
+2025-02-09 15:15:51,683 - INFO - 127.0.0.1 - - [09/Feb/2025 15:15:51] "[35m[1mGET /attendance HTTP/1.1[0m" 500 -
+2025-02-09 15:15:56,240 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+2025-02-09 15:15:56,244 - INFO - 127.0.0.1 - - [09/Feb/2025 15:15:56] "[35m[1mGET /live HTTP/1.1[0m" 500 -
+2025-02-09 15:15:56,610 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 15:15:57,540 - WARNING -  * Debugger is active!
+2025-02-09 15:15:57,542 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:15:57,634 - INFO - 127.0.0.1 - - [09/Feb/2025 15:15:57] "GET /live?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-09 15:15:57,680 - INFO - 127.0.0.1 - - [09/Feb/2025 15:15:57] "GET /live?__debugger__=yes&cmd=resource&f=console.png&s=fnXqPVAHzcid5dlXRcml HTTP/1.1" 200 -
+2025-02-09 15:15:58,003 - INFO - 127.0.0.1 - - [09/Feb/2025 15:15:58] "GET /live?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-09 15:16:03,355 - INFO - 127.0.0.1 - - [09/Feb/2025 15:16:03] "GET /register HTTP/1.1" 200 -
+2025-02-09 15:16:10,076 - ERROR - Error fetching attendance: no such column: distance
+2025-02-09 15:16:10,076 - INFO - 127.0.0.1 - - [09/Feb/2025 15:16:10] "[35m[1mGET /attendance HTTP/1.1[0m" 500 -
+2025-02-09 15:16:14,802 - ERROR - Error generating reports: Execution failed on sql '
+            SELECT name, COUNT(*) as count, 
+                   AVG(confidence) as avg_confidence,
+                   AVG(distance) as avg_distance,
+                   MAX(timestamp) as last_seen
+            FROM attendance
+            WHERE date(timestamp) = date('now')
+            GROUP BY name
+        ': no such column: distance
+2025-02-09 15:16:14,802 - INFO - 127.0.0.1 - - [09/Feb/2025 15:16:14] "[35m[1mGET /reports HTTP/1.1[0m" 500 -
+2025-02-09 15:18:25,141 - INFO -  * Detected change in 'C:\\smart_presence\\app.py', reloading
+2025-02-09 15:18:25,982 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 15:18:27,036 - WARNING -  * Debugger is active!
+2025-02-09 15:18:27,039 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:20:06,136 - ERROR - Error generating reports: Execution failed on sql '
+            SELECT name, COUNT(*) as count, 
+                   AVG(confidence) as avg_confidence,
+                   AVG(distance) as avg_distance,
+                   MAX(timestamp) as last_seen
+            FROM attendance
+            WHERE date(timestamp) = date('now')
+            GROUP BY name
+        ': no such column: distance
+2025-02-09 15:20:06,136 - INFO - 127.0.0.1 - - [09/Feb/2025 15:20:06] "[35m[1mGET /reports HTTP/1.1[0m" 500 -
+2025-02-09 15:20:08,345 - INFO - 127.0.0.1 - - [09/Feb/2025 15:20:08] "GET /register HTTP/1.1" 200 -
+2025-02-09 15:20:11,140 - INFO - 127.0.0.1 - - [09/Feb/2025 15:20:11] "GET /live HTTP/1.1" 200 -
+2025-02-09 15:20:19,040 - INFO - Model loaded successfully
+2025-02-09 15:20:20,236 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:20,241 - INFO - 127.0.0.1 - - [09/Feb/2025 15:20:20] "GET /video_feed HTTP/1.1" 200 -
+2025-02-09 15:20:20,449 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:20,465 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:20,644 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:20,650 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:20,806 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:20,980 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:21,155 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:21,314 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:21,485 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:21,660 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:21,849 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:22,034 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:22,263 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:22,461 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:22,484 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:22,678 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:22,865 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:23,038 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:23,845 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:24,087 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:24,329 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:24,555 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:24,750 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:25,864 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:26,060 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:26,254 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:26,460 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:26,646 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:26,844 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:26,847 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:27,036 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:27,244 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:27,444 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:27,857 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:28,072 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:28,265 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:28,271 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:28,471 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:28,674 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:28,873 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:29,071 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:29,074 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:29,080 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:29,295 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:29,697 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:29,877 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:30,079 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:30,082 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:30,295 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:30,301 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:30,517 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:30,732 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:30,938 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:30,940 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:31,156 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:31,380 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:31,594 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:31,600 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:31,811 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:31,819 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:32,028 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:32,416 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:32,600 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:32,781 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:32,787 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:32,977 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:33,160 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:33,356 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:33,553 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:33,750 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:33,923 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:34,092 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:34,268 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:34,448 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:34,621 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:34,973 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:35,147 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:35,814 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:35,991 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:36,165 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:36,339 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:36,506 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:36,678 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:36,842 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:37,008 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:37,350 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:37,510 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:37,673 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:37,830 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:38,008 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:38,196 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:38,561 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:38,739 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:38,921 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:39,100 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:39,270 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:39,445 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:39,617 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:39,790 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:39,964 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:40,037 - ERROR - Error fetching attendance: no such column: distance
+2025-02-09 15:20:40,037 - INFO - 127.0.0.1 - - [09/Feb/2025 15:20:40] "[35m[1mGET /attendance HTTP/1.1[0m" 500 -
+2025-02-09 15:20:40,160 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:40,330 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:40,510 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:40,858 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:47,399 - ERROR - Error fetching attendance: no such column: distance
+2025-02-09 15:20:47,400 - INFO - 127.0.0.1 - - [09/Feb/2025 15:20:47] "[35m[1mGET /attendance HTTP/1.1[0m" 500 -
+2025-02-09 15:20:52,421 - INFO - Model loaded successfully
+2025-02-09 15:20:53,128 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:53,133 - INFO - 127.0.0.1 - - [09/Feb/2025 15:20:53] "GET /video_feed HTTP/1.1" 200 -
+2025-02-09 15:20:53,353 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:53,556 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:53,737 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:53,924 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:54,126 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:20:54,346 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:21:25,946 - INFO - 127.0.0.1 - - [09/Feb/2025 15:21:25] "GET / HTTP/1.1" 200 -
+2025-02-09 15:21:26,851 - INFO - 127.0.0.1 - - [09/Feb/2025 15:21:26] "GET /register HTTP/1.1" 200 -
+2025-02-09 15:21:28,473 - INFO - 127.0.0.1 - - [09/Feb/2025 15:21:28] "GET /live HTTP/1.1" 200 -
+2025-02-09 15:21:29,173 - ERROR - Error fetching attendance: no such column: distance
+2025-02-09 15:21:29,173 - INFO - 127.0.0.1 - - [09/Feb/2025 15:21:29] "[35m[1mGET /attendance HTTP/1.1[0m" 500 -
+2025-02-09 15:21:35,762 - INFO - Model loaded successfully
+2025-02-09 15:21:36,549 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:21:36,554 - INFO - 127.0.0.1 - - [09/Feb/2025 15:21:36] "GET /video_feed HTTP/1.1" 200 -
+2025-02-09 15:21:36,723 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:21:36,890 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:21:37,053 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:21:37,214 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:21:37,404 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:21:37,594 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:23:21,055 - INFO -  * Detected change in 'C:\\smart_presence\\init_db.py', reloading
+2025-02-09 15:23:21,096 - INFO -  * Detected change in 'C:\\smart_presence\\init_db.py', reloading
+2025-02-09 15:23:21,096 - INFO -  * Detected change in 'C:\\smart_presence\\init_db.py', reloading
+2025-02-09 15:26:06,677 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-02-09 15:26:06,677 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 15:26:06,691 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 15:26:07,532 - WARNING -  * Debugger is active!
+2025-02-09 15:26:07,534 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:27:03,126 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\config.py', reloading
+2025-02-09 15:27:03,136 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-02-09 15:27:03,140 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-02-09 15:27:03,164 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-02-09 15:27:03,209 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-02-09 15:27:03,213 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-02-09 15:27:03,214 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-02-09 15:27:03,782 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 15:27:04,619 - WARNING -  * Debugger is active!
+2025-02-09 15:27:04,622 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:28:19,117 - INFO -  * Detected change in 'C:\\Python312\\Lib\\sqlite3\\dbapi2.py', reloading
+2025-02-09 15:28:19,963 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 15:28:20,972 - WARNING -  * Debugger is active!
+2025-02-09 15:28:20,975 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:35:59,476 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-02-09 15:35:59,476 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 15:35:59,492 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 15:36:00,353 - WARNING -  * Debugger is active!
+2025-02-09 15:36:00,355 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:36:05,965 - INFO - 127.0.0.1 - - [09/Feb/2025 15:36:05] "GET / HTTP/1.1" 200 -
+2025-02-09 15:36:09,881 - ERROR - SQLite error in attendance route: no such column: distance
+2025-02-09 15:36:09,881 - INFO - 127.0.0.1 - - [09/Feb/2025 15:36:09] "[35m[1mGET /attendance HTTP/1.1[0m" 500 -
+2025-02-09 15:36:18,898 - ERROR - Error generating reports: Execution failed on sql '
+            SELECT name, COUNT(*) as count, 
+                   AVG(confidence) as avg_confidence,
+                   AVG(distance) as avg_distance,
+                   MAX(timestamp) as last_seen
+            FROM attendance
+            WHERE date(timestamp) = date('now')
+            GROUP BY name
+        ': no such column: distance
+2025-02-09 15:36:18,899 - INFO - 127.0.0.1 - - [09/Feb/2025 15:36:18] "[35m[1mGET /reports HTTP/1.1[0m" 500 -
+2025-02-09 15:36:23,896 - INFO - 127.0.0.1 - - [09/Feb/2025 15:36:23] "GET /register HTTP/1.1" 200 -
+2025-02-09 15:36:25,579 - INFO - 127.0.0.1 - - [09/Feb/2025 15:36:25] "GET /live HTTP/1.1" 200 -
+2025-02-09 15:36:26,602 - INFO - 127.0.0.1 - - [09/Feb/2025 15:36:26] "GET / HTTP/1.1" 200 -
+2025-02-09 15:36:28,284 - ERROR - SQLite error in attendance route: no such column: distance
+2025-02-09 15:36:28,284 - INFO - 127.0.0.1 - - [09/Feb/2025 15:36:28] "[35m[1mGET /attendance HTTP/1.1[0m" 500 -
+2025-02-09 15:36:33,202 - INFO - Model loaded successfully
+2025-02-09 15:36:34,263 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:34,268 - INFO - 127.0.0.1 - - [09/Feb/2025 15:36:34] "GET /video_feed HTTP/1.1" 200 -
+2025-02-09 15:36:34,500 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:34,503 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:34,740 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:34,742 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:34,960 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:34,963 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:35,167 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:35,169 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:35,396 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:36:35,402 - ERROR - Error marking attendance: table attendance has no column named distance
+2025-02-09 15:38:26,377 - INFO - 127.0.0.1 - - [09/Feb/2025 15:38:26] "GET / HTTP/1.1" 200 -
+2025-02-09 15:40:17,829 - INFO -  * Detected change in 'C:\\Python312\\Lib\\tokenize.py', reloading
+2025-02-09 15:45:16,564 - INFO - Added 'distance' column to attendance table
+2025-02-09 15:45:16,597 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-02-09 15:45:16,597 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 15:45:16,612 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 15:45:17,416 - WARNING -  * Debugger is active!
+2025-02-09 15:45:17,418 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 15:45:24,072 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:24] "GET / HTTP/1.1" 200 -
+2025-02-09 15:45:25,911 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:25] "GET /attendance HTTP/1.1" 200 -
+2025-02-09 15:45:30,166 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:30] "GET /reports HTTP/1.1" 200 -
+2025-02-09 15:45:34,225 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:34] "GET / HTTP/1.1" 200 -
+2025-02-09 15:45:35,618 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:35] "GET /register HTTP/1.1" 200 -
+2025-02-09 15:45:36,746 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:36] "GET /live HTTP/1.1" 200 -
+2025-02-09 15:45:39,138 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:39] "GET /attendance HTTP/1.1" 200 -
+2025-02-09 15:45:40,616 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:40] "GET / HTTP/1.1" 200 -
+2025-02-09 15:45:44,524 - INFO - Model loaded successfully
+2025-02-09 15:45:45,701 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:45] "GET /video_feed HTTP/1.1" 200 -
+2025-02-09 15:45:46,806 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:46] "GET /reports HTTP/1.1" 200 -
+2025-02-09 15:45:52,433 - INFO - 127.0.0.1 - - [09/Feb/2025 15:45:52] "GET /attendance HTTP/1.1" 200 -
+2025-02-09 15:46:05,301 - INFO - 127.0.0.1 - - [09/Feb/2025 15:46:05] "GET / HTTP/1.1" 200 -
+2025-02-09 16:00:28,577 - INFO - 127.0.0.1 - - [09/Feb/2025 16:00:28] "GET / HTTP/1.1" 200 -
+2025-02-09 16:00:28,905 - INFO - 127.0.0.1 - - [09/Feb/2025 16:00:28] "GET / HTTP/1.1" 200 -
+2025-02-09 16:01:04,235 - INFO - 127.0.0.1 - - [09/Feb/2025 16:01:04] "GET /attendance HTTP/1.1" 200 -
+2025-02-09 16:01:07,052 - INFO -  * Detected change in 'C:\\Python312\\Lib\\xml\\etree\\__init__.py', reloading
+2025-02-09 16:01:07,086 - INFO -  * Detected change in 'C:\\Python312\\Lib\\xml\\etree\\ElementTree.py', reloading
+2025-02-09 16:01:07,108 - INFO -  * Detected change in 'C:\\Python312\\Lib\\xml\\etree\\ElementPath.py', reloading
+2025-02-09 16:01:45,158 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-02-09 16:01:45,158 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 16:01:45,173 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 16:01:46,105 - WARNING -  * Debugger is active!
+2025-02-09 16:01:46,108 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 16:02:21,057 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-02-09 16:02:21,058 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 16:02:21,070 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 16:02:21,849 - WARNING -  * Debugger is active!
+2025-02-09 16:02:21,852 - INFO -  * Debugger PIN: 310-677-210
+2025-02-09 16:02:22,297 - INFO - 127.0.0.1 - - [09/Feb/2025 16:02:22] "GET / HTTP/1.1" 200 -
+2025-02-09 16:02:32,664 - INFO - 127.0.0.1 - - [09/Feb/2025 16:02:32] "GET / HTTP/1.1" 200 -
+2025-02-09 16:02:35,880 - INFO - 127.0.0.1 - - [09/Feb/2025 16:02:35] "GET /attendance HTTP/1.1" 200 -
+2025-02-09 16:02:37,310 - INFO - 127.0.0.1 - - [09/Feb/2025 16:02:37] "GET /export HTTP/1.1" 200 -
+2025-02-09 16:02:50,410 - INFO - 127.0.0.1 - - [09/Feb/2025 16:02:50] "GET / HTTP/1.1" 200 -
+2025-02-09 22:13:52,807 - INFO - 127.0.0.1 - - [09/Feb/2025 22:13:52] "GET /register HTTP/1.1" 200 -
+2025-02-09 22:13:56,310 - INFO - 127.0.0.1 - - [09/Feb/2025 22:13:56] "GET / HTTP/1.1" 200 -
